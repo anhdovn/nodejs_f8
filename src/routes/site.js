@@ -1,8 +1,8 @@
-const newsController = require('../app/controllers/NewsController');
 const express = require('express');
 const router = express.Router();
+const siteController = require('../app/controllers/SiteController');
 
-	router.use('/:slug', newsController.show);
-router.use('/', newsController.index);
+router.use('/search', siteController.search);
+router.use('/', siteController.index);
 
 module.exports = router; // Export router to use in another file. ( nodejs_blog/src/routes/index.js )
