@@ -16,8 +16,8 @@ app.use(morgan('combined'));
 
 // use express-handlebars to render the view
 const engine = exphbs.engine;
-app.engine('.hbs', engine({ extname: '.hbs' }));
-app.set('view engine', '.hbs');
+			app.engine('.hbs', engine({ extname: '.hbs' }));
+				app.set('view engine', '.hbs');
 app.set('views', path.join(__dirname, 'app/views'));
 
 // define routes
