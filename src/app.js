@@ -3,6 +3,10 @@ const morgan = require('morgan'); // import morgan ( morgan is a module that hel
 const routes = require('./routes');
 const exphbs = require('express-handlebars'); // import express-handlebars ( it is a module that helps render the view )
 const path = require('path'); // import path ( path is a module that helps work with file and directory paths )
+const db = require('./config/db'); // import db ( db is a module that helps connect to the database )
+
+// connect to database
+db.connect();
 
 // define express app
 const app = express();

@@ -5,12 +5,10 @@ const Schema = mongoose.Schema; // Define Schema method
 const NewsSchema = new Schema({
 	title: {
 		type: String,
-		required: true,
 	},
 	content: {
 		type: String,
-		required: true,
 	},
 });
 
-module.exports = mongoose.model('News', NewsSchema); // Export model with name Blog
+module.exports = mongoose.model('New', NewsSchema); // Export model with name Blog

@@ -1,7 +1,18 @@
+const New = require('../models/News'); // Import News model
+
+// Define NewsController
 class NewsController {
 	// [GET] /news
 	index(req, res) {
-		res.render('news');
+		async function getNews() {
+			try {
+				const news = await New.find({});
+				res.json(news);
+			} catch (error) {
+				res.status(400).json({ error: 'ERROR!!!' });
+			}
+		}
+		getNews();
 	}
 
 	// [GET] /news/:slug
