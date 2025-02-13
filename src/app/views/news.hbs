@@ -1,1 +1,9 @@
 <h2>news</h2>
+<ul class='box_news'>
+	{{#each news}}
+		<li>
+			<h3>{{this.title}}</h3>
+			<p>{{this.content}}</p>
+		</li>
+	{{/each}}
+</ul>

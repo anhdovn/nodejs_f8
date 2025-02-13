@@ -22,7 +22,7 @@ app.use(morgan('combined'));
 const engine = exphbs.engine;
 app.engine('.hbs', engine({ extname: '.hbs' }));
 app.set('view engine', '.hbs');
-app.set('views', path.join(__dirname, 'app/views'));
+app.set('views', path.join(__dirname, 'app', 'views'));
 
 // define routes
 routes(app);

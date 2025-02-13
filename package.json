@@ -5,7 +5,7 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "nodemon --inspect src/app.js",
-		"format": "prettier 'src/**/*.{js,json,scss}' --write --config .prettierrc",
+		"format": "prettier 'src/**/*.{js,json,scss,hbs}' --write --config .prettierrc",
 		"prepare": "husky"
 	},
 	"author": "",
